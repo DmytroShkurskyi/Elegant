@@ -1,0 +1,286 @@
+@font-face {
+    font-family: "opensans-light-font";
+    font-weight: 300;
+    font-style: normal;
+    src:url("../fonts/OpenSans-Light/OpenSans-Light.eot");
+    src:url("../fonts/OpenSans-Light/OpenSans-Light.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/OpenSans-Light/OpenSans-Light.woff") format("woff"),
+    url("../fonts/OpenSans-Light/OpenSans-Light.ttf") format("true-type");
+}
+
+@font-face {
+    font-family: "opensans-regular-font";
+    font-weight: normal;
+    font-style: normal;
+    src:url("../fonts/OpenSans-Regular/OpenSans-Regular.eot");
+    src:url("../fonts/OpenSans-Regular/OpenSans-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/OpenSans-Regular/OpenSans-Regular.woff") format("woff"),
+    url("../fonts/OpenSans-Regular/OpenSans-Regular.ttf") format("true-type");
+}
+
+@font-face {
+    font-family: "opensans-semibold-font";
+    font-weight: 600;
+    font-style: normal;
+    src: url("../fonts/OpenSans-SemiBold/OpenSans-SemiBold.eot");
+    src: url("../fonts/OpenSans-SemiBold/OpenSans-SemiBold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/OpenSans-SemiBold/OpenSans-SemiBold.woff") format("woff"),
+    url("../fonts/OpenSans-SemiBold/OpenSans-SemiBold.ttf") format("true-type");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 17px 48px 0 48px;
+}
+
+.menu__link {
+    display: inline-block;
+}
+
+.menu__link::before {
+    content: '';
+    display: block;
+}
+
+.menu__link_text {
+    font-family: "opensans-semibold-font", sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+}
+
+.menu__link_hamburger::before {
+    content: '';
+    width: 18px;
+    height: 12px;
+    background: url("../images/menu.png") no-repeat center / contain;
+    margin-left: 4px;
+}
+
+.banner {
+    background: url("../images/banner.png") no-repeat center / cover;
+    padding-top: 375px;
+    padding-bottom: 398px;
+    margin-top: -63px;
+    max-width: 1280px;
+}
+
+.title {
+    font-family: "opensans-light-font", sans-serif;
+    font-size: 80px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.text {
+    font-style: italic;
+}
+
+.content-zone {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.section-title {
+    font-family: "opensans-semibold-font", sans-serif;
+    font-size: 13px;
+    color: rgb(212, 175, 55);
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 82px;
+}
+
+.section-subtitle {
+    font-family: "opensans-semibold-font", sans-serif;
+    font-size: 44px;
+    color: rgba(2, 23, 37, 0.702);
+    text-align: center;
+    margin-top: 23px;
+}
+
+.section-text {
+    font-family: "opensans-light-font", sans-serif;
+    font-size: 18px;
+    color: rgb(2, 23, 37);
+    line-height: 1.778;
+    text-align: center;
+    margin-top: 55px;
+
+}
+
+.btn {
+    display: block;
+    max-width: 240px;
+    border: 1px solid black;
+    font-family: "opensans-light-font", sans-serif;
+    color: rgb(2, 23, 37);
+    font-size: 14px;
+    text-align: center;
+    padding: 20px 50px;
+    margin: 47px auto 0 auto;
+}
+
+.no-gutters {
+    margin-left: -10px;
+}
+
+.collage {
+    margin-top: 164px;
+}
+
+.container-fluid {
+    margin-top: 80px;
+}
+
+.people__inner {
+    display: flex;
+    margin-top: 50px;
+}
+.people__item{
+    background-color: rgb(249, 249, 249);
+    padding-top: 21px;
+    padding-bottom: 47px;
+    padding-left: 17px;
+    margin-right: 5px;
+}
+
+.people__job {
+    display: block;
+    font-family: "opensans-semibold-font", sans-serif;
+    font-size: 13px;
+    color: rgb(212, 175, 55);
+    text-transform: uppercase;
+}
+
+.people__name {
+    display: block;
+    font-family: "opensans-regular-font", sans-serif;
+    font-size: 21px;
+    color: rgba(2, 23, 37, 0.702);
+    margin-top: 21px;
+    margin-bottom: 37px;
+}
+
+.people__info {
+    font-family: "opensans-light-font", sans-serif;
+    font-size: 13px;
+    color: rgb(2, 23, 37);
+    line-height: 1.769;
+}
+
+.blog__inner {
+    display: flex;
+    margin-top: 51px;
+}
+
+.blog__info {
+    background-color: rgb(249, 249, 249);
+    padding-top: 44px;
+    padding-left: 40px;
+}
+
+.blog__date {
+    font-family: "opensans-regular-font", sans-serif;
+    font-size: 13px;
+    color: rgb(80, 93, 104);
+    text-transform: uppercase;
+}
+
+.blog__title {
+    font-family: "opensans-regular-font", sans-serif;
+    font-size: 30px;
+    color: rgb(80, 93, 104);
+    margin-top: 21px;
+    margin-bottom: 33px;
+}
+
+.blog__text {
+    font-family: "opensans-light-font", sans-serif;
+    font-size: 16px;
+    color: rgb(80, 93, 104);
+    line-height: 1.544;
+}
+
+.blog__button {
+    display: block;
+    max-width: 125px;
+    border: 1px solid black;
+    font-family: "opensans-light-font", sans-serif;
+    color: rgb(2, 23, 37);
+    font-size: 14px;
+    text-align: center;
+    padding: 15px 45px;
+    margin-top: 60px;
+}
+
+.map {
+    margin-top: 56px;
+}
+
+.contact__inner {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 43px;
+    background-color: rgb(249, 249, 249);
+}
+
+.contact__item {
+    flex-basis: 50%;
+    text-align: center;
+    margin-top: 95px;
+}
+
+.contact__name {
+    font-family: "opensans-semibold-font", sans-serif;
+    font-size: 13px;
+    color: rgb(80, 93, 104);
+    text-transform: uppercase;
+}
+
+.contact__text {
+    font-family: "opensans-light-font", sans-serif;
+    font-size: 19px;
+    color: rgb(80, 93, 104);
+    line-height: 1.789;
+    margin-top: 50px;
+}
+
+.copyright {
+    background-color: rgb(238, 238, 238);
+    margin-top: 80px;
+    padding-top: 40px;
+    padding-bottom: 36px;
+}
+
+.copyright__inner {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: "opensans-light-font", sans-serif;
+    font-size: 16px;
+    color: rgb(80, 93, 104);
+}
+
+.copyright__name {
+    display: block;
+}
+
+.copyright__email {
+    display: block;
+}
+
+.color {
+    color: rgb(80, 93, 104);
+}
+
